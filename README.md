@@ -80,8 +80,19 @@ npm install --prefix mobile
 node -e "import('bcryptjs').then(({default:b}) => console.log(b.hashSync('your-password', 12)))"
 ```
 
-3. From the `server/` folder, with SQL Server running in the Docker container
-   `sqlserver`, install the database:
+3. Start SQL Server 2022 in Docker (first time only). Choose a strong password
+   (at least 8 characters, with upper case, lower case and a number) and put the
+   same one in `DB_PASSWORD` in `server/.env`:
+
+```bash
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=YourStrong!Passw0rd" \
+  -p 1433:1433 --name sqlserver -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+   On an Apple Silicon Mac, turn on "Use Rosetta" in Docker Desktop settings
+   first. After a restart, run `docker start sqlserver`.
+
+   Then, from the `server/` folder, install the database:
 
 ```bash
 npm run db:install -- --database SmartBasketDemo
