@@ -1,0 +1,124 @@
+{
+  "$schemaVersion": 1,
+  "locale": "fr",
+  "note": "Authored French display overlay for recipes.json. NO runtime machine translation. recipes.json stays the canonical English dataset; this file only supplies fr display strings (name, description, cuisine, category, per-ingredient label + quantityText). It never affects recipe ids, ingredient keys, alternatives (anyOfKeys), structured amounts/units, ranking or fallbackRank. Validated against recipes.json by recipeLocalization.js: every recipe id and every ingredient key must be covered, with non-blank strings within the recipes.json length limits.",
+  "recipes": {
+    "classic-omelette": {
+      "name": "Omelette nature",
+      "description": "Une omelette pliée, cuite en quelques minutes pour une personne.",
+      "cuisine": "française",
+      "category": "petit-déjeuner",
+      "ingredients": {
+        "egg": { "label": "Œufs", "quantityText": "3" },
+        "butter": { "label": "Beurre ou huile d’olive", "quantityText": "1 noix de beurre ou un peu d’huile d’olive" },
+        "cheese": { "label": "Fromage râpé", "quantityText": "30 g" }
+      }
+    },
+    "fluffy-pancakes": {
+      "name": "Pancakes moelleux",
+      "description": "Des pancakes à la poêle à partir d’une pâte à trois ingrédients.",
+      "cuisine": "internationale",
+      "category": "petit-déjeuner",
+      "ingredients": {
+        "flour": { "label": "Farine", "quantityText": "200 g" },
+        "egg": { "label": "Œufs", "quantityText": "2" },
+        "milk": { "label": "Lait", "quantityText": "300 ml" },
+        "sugar": { "label": "Sucre", "quantityText": "1 c. à soupe" },
+        "butter": { "label": "Beurre", "quantityText": "pour la poêle" }
+      }
+    },
+    "tomato-pantry-pasta": {
+      "name": "Pâtes sauce tomate",
+      "description": "Pâtes sèches nappées de concentré de tomate et d’huile d’olive. Un plat de placard, pas une salade de tomates fraîches.",
+      "cuisine": "italienne",
+      "category": "plat principal",
+      "ingredients": {
+        "pasta": { "label": "Pâtes", "quantityText": "300 g" },
+        "tomato": { "label": "Concentré ou sauce tomate", "quantityText": "1 boîte / tube" },
+        "olive_oil": { "label": "Huile d’olive", "quantityText": "2 c. à soupe" }
+      }
+    },
+    "tuna-pasta-salad": {
+      "name": "Salade de pâtes au thon",
+      "description": "Pâtes froides mélangées au thon en conserve et à la mayonnaise. Le maïs est facultatif s’il existe ; il n’est pas inventé.",
+      "cuisine": "internationale",
+      "category": "plat principal",
+      "ingredients": {
+        "pasta": { "label": "Pâtes", "quantityText": "250 g" },
+        "canned_tuna": { "label": "Thon en conserve", "quantityText": "250 g (deux petites boîtes)" },
+        "mayonnaise": { "label": "Mayonnaise", "quantityText": "3 c. à soupe" },
+        "sweetcorn": { "label": "Maïs doux", "quantityText": "facultatif" }
+      }
+    },
+    "chickpea-tomato-stew": {
+      "name": "Ragoût de pois chiches à la tomate",
+      "description": "Pois chiches mijotés avec du concentré de tomate et de l’huile d’olive. Ce n’est pas un curry : ni lait de coco, ni oignon, ni curry.",
+      "cuisine": "méditerranéenne",
+      "category": "plat principal",
+      "ingredients": {
+        "chickpeas": { "label": "Pois chiches", "quantityText": "1 boîte" },
+        "tomato": { "label": "Concentré ou sauce tomate", "quantityText": "1 boîte / tube" },
+        "olive_oil": { "label": "Huile d’olive", "quantityText": "2 c. à soupe" }
+      }
+    },
+    "mushroom-pea-rice": {
+      "name": "Riz aux champignons et petits pois",
+      "description": "Riz cuit avec des champignons en conserve, des petits pois et du beurre ou de l’huile d’olive. Un riz de placard, pas un risotto arborio.",
+      "cuisine": "internationale",
+      "category": "plat principal",
+      "ingredients": {
+        "rice": { "label": "Riz", "quantityText": "300 g" },
+        "mushroom": { "label": "Champignons en conserve", "quantityText": "1 boîte" },
+        "peas": { "label": "Petits pois", "quantityText": "1 boîte" },
+        "butter": { "label": "Beurre ou huile d’olive", "quantityText": "une noix de beurre ou un peu d’huile d’olive" }
+      }
+    },
+    "tuna-tortilla-wrap": {
+      "name": "Wrap au thon",
+      "description": "Une tortilla de blé garnie de thon en conserve et de mayonnaise. Le fromage est facultatif.",
+      "cuisine": "internationale",
+      "category": "plat principal",
+      "ingredients": {
+        "tortilla": { "label": "Tortillas", "quantityText": "2" },
+        "canned_tuna": { "label": "Thon en conserve", "quantityText": "1 petite boîte" },
+        "mayonnaise": { "label": "Mayonnaise", "quantityText": "2 c. à soupe" },
+        "cheese": { "label": "Fromage", "quantityText": "facultatif" }
+      }
+    },
+    "cheesy-tomato-pasta": {
+      "name": "Pâtes tomate-fromage",
+      "description": "Pâtes au concentré de tomate, à l’huile d’olive et à un vrai fromage. Parmesan, mozzarella ou fromage étiqueté satisfont l’exigence fromage.",
+      "cuisine": "italienne",
+      "category": "plat principal",
+      "ingredients": {
+        "pasta": { "label": "Pâtes", "quantityText": "300 g" },
+        "tomato": { "label": "Concentré ou sauce tomate", "quantityText": "1 boîte / tube" },
+        "olive_oil": { "label": "Huile d’olive", "quantityText": "2 c. à soupe" },
+        "cheese": { "label": "Fromage (parmesan, mozzarella ou fromage étiqueté)", "quantityText": "pour servir" }
+      }
+    },
+    "rice-pudding": {
+      "name": "Riz au lait",
+      "description": "Riz mijoté dans du lait avec du sucre. Un vrai dessert de placard, pas un substitut de muffin.",
+      "cuisine": "internationale",
+      "category": "dessert",
+      "ingredients": {
+        "rice": { "label": "Riz", "quantityText": "150 g" },
+        "milk": { "label": "Lait", "quantityText": "1 L" },
+        "sugar": { "label": "Sucre", "quantityText": "80 g" }
+      }
+    },
+    "peanut-butter-pancakes": {
+      "name": "Pancakes au beurre de cacahuète",
+      "description": "La pâte à pancakes plus du beurre de cacahuète.",
+      "cuisine": "internationale",
+      "category": "petit-déjeuner",
+      "ingredients": {
+        "flour": { "label": "Farine", "quantityText": "200 g" },
+        "egg": { "label": "Œufs", "quantityText": "2" },
+        "milk": { "label": "Lait", "quantityText": "300 ml" },
+        "peanut_butter": { "label": "Beurre de cacahuète", "quantityText": "2 c. à soupe" }
+      }
+    }
+  }
+}

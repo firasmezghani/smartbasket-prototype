@@ -1,0 +1,31 @@
+{
+  "name": "smartbasket-server",
+  "description": "SmartBasket API: catalogue, basket, QR validation, and recipe recommendations.",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "demo": "node scripts/run-demo-api.mjs",
+    "db:install": "node scripts/flyway-install.mjs",
+    "db:export-seed": "node scripts/export-public-seed.mjs",
+    "start": "node src/server.js",
+    "test": "node --import ./test-support/testEnv.mjs --test",
+    "evaluate:recommendations": "node src/evaluation/runRecommendationEvaluation.js",
+    "test:db:create": "node scripts/create-disposable-test-db.mjs",
+    "test:db": "node scripts/run-disposable-integration.mjs"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.0",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^7.1.0",
+    "jsonwebtoken": "^9.0.3",
+    "mssql": "^11.0.1"
+  }
+}

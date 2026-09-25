@@ -1,0 +1,1266 @@
+{
+  "evaluationVersion": 2,
+  "scenarioVersion": 2,
+  "generatedAt": "deterministic-no-clock",
+  "recipeCount": 10,
+  "scenarioCount": 14,
+  "retrievalScenarioCount": 10,
+  "kValues": [
+    1,
+    3,
+    5
+  ],
+  "method": {
+    "system": "Production deterministic requirement-aware recommender with reliability gate and contextual exclusions; no database or network access.",
+    "baseline": "Fixed authored fallbackRank ascending (not measured popularity), independent of basket/history evidence.",
+    "relevance": "Versioned, manually authored recipe IDs for synthetic scenarios. These labels measure scenario suitability, not real customer preference.",
+    "fitMetrics": "Coverage and missing-essential values are computed once by the production requirement evaluator, then summarized over each ranker ordering.",
+    "exclusions": "Guardrail and cold-start scenarios are reported separately and excluded from retrieval averages."
+  },
+  "summary": {
+    "system": {
+      "evaluatedScenarios": 10,
+      "meanReciprocalRank": 1,
+      "hitRateAt1": 1,
+      "meanPrecisionAt1": 1,
+      "meanRecallAt1": 1,
+      "meanEssentialCoverageAt1": 1,
+      "meanMissingEssentialAt1": 0,
+      "hitRateAt3": 1,
+      "meanPrecisionAt3": 0.3333,
+      "meanRecallAt3": 1,
+      "meanEssentialCoverageAt3": 0.6834,
+      "meanMissingEssentialAt3": 0.9333,
+      "hitRateAt5": 1,
+      "meanPrecisionAt5": 0.2,
+      "meanRecallAt5": 1,
+      "meanEssentialCoverageAt5": 0.5183,
+      "meanMissingEssentialAt5": 1.46
+    },
+    "baseline": {
+      "evaluatedScenarios": 10,
+      "meanReciprocalRank": 0.3994,
+      "hitRateAt1": 0.2,
+      "meanPrecisionAt1": 0.2,
+      "meanRecallAt1": 0.2,
+      "meanEssentialCoverageAt1": 0.5,
+      "meanMissingEssentialAt1": 1,
+      "hitRateAt3": 0.5,
+      "meanPrecisionAt3": 0.1667,
+      "meanRecallAt3": 0.5,
+      "meanEssentialCoverageAt3": 0.4,
+      "meanMissingEssentialAt3": 1.6333,
+      "hitRateAt5": 0.7,
+      "meanPrecisionAt5": 0.14,
+      "meanRecallAt5": 0.7,
+      "meanEssentialCoverageAt5": 0.34,
+      "meanMissingEssentialAt5": 1.88
+    },
+    "deltas": {
+      "meanReciprocalRank": 0.6006,
+      "hitRateAt1": 0.8,
+      "meanPrecisionAt1": 0.8,
+      "meanRecallAt1": 0.8,
+      "meanEssentialCoverageAt1": 0.5,
+      "meanMissingEssentialAt1": -1,
+      "hitRateAt3": 0.5,
+      "meanPrecisionAt3": 0.1666,
+      "meanRecallAt3": 0.5,
+      "meanEssentialCoverageAt3": 0.2834,
+      "meanMissingEssentialAt3": -0.7,
+      "hitRateAt5": 0.3,
+      "meanPrecisionAt5": 0.06,
+      "meanRecallAt5": 0.3,
+      "meanEssentialCoverageAt5": 0.1783,
+      "meanMissingEssentialAt5": -0.42
+    },
+    "guardrails": {
+      "checksPassed": 32,
+      "checksTotal": 32,
+      "passRate": 1,
+      "scenariosPassed": 14,
+      "scenariosTotal": 14
+    }
+  },
+  "scenarios": [
+    {
+      "id": "basket-omelette-six-eggs-olive-oil",
+      "description": "A six-egg retail pack and olive oil should make the omelette a strong match.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "classic-omelette"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "egg",
+        "olive_oil"
+      ],
+      "systemTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "chickpea-tomato-stew",
+        "mushroom-pea-rice"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.5556,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.45,
+        "meanMissingEssentialAt5": 1.8
+      },
+      "baseline": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.5556,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.4,
+        "meanMissingEssentialAt5": 1.8
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "classic-omelette/egg status",
+          "passed": true,
+          "expected": [
+            "sufficient"
+          ],
+          "actual": "sufficient"
+        },
+        {
+          "name": "classic-omelette/egg availableAmount",
+          "passed": true,
+          "expected": 6,
+          "actual": 6
+        },
+        {
+          "name": "classic-omelette/egg availableUnit",
+          "passed": true,
+          "expected": "piece",
+          "actual": "piece"
+        },
+        {
+          "name": "classic-omelette/butter status",
+          "passed": true,
+          "expected": [
+            "matched"
+          ],
+          "actual": "matched"
+        },
+        {
+          "name": "classic-omelette/butter matchedKey",
+          "passed": true,
+          "expected": "olive_oil",
+          "actual": "olive_oil"
+        }
+      ],
+      "checksPassed": 6,
+      "checksTotal": 6,
+      "passed": true
+    },
+    {
+      "id": "basket-tomato-pantry-pasta",
+      "description": "Pasta, tomato concentrate and olive oil target tomato pantry pasta.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "tomato-pantry-pasta"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "olive_oil",
+        "pasta",
+        "tomato"
+      ],
+      "systemTop5": [
+        "tomato-pantry-pasta",
+        "cheesy-tomato-pasta",
+        "chickpea-tomato-stew",
+        "classic-omelette",
+        "tuna-pasta-salad"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.8056,
+        "meanMissingEssentialAt3": 0.6667,
+        "meanEssentialCoverageAt5": 0.65,
+        "meanMissingEssentialAt5": 1
+      },
+      "baseline": {
+        "firstRelevantRank": 3,
+        "reciprocalRank": 0.3333333333333333,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.5,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.5,
+        "meanMissingEssentialAt5": 1.4
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "basket-mushroom-pea-rice",
+      "description": "Rice, canned mushrooms, peas and olive oil target mushroom and pea rice.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "mushroom-pea-rice"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "mushroom",
+        "olive_oil",
+        "peas",
+        "rice"
+      ],
+      "systemTop5": [
+        "mushroom-pea-rice",
+        "classic-omelette",
+        "tomato-pantry-pasta",
+        "chickpea-tomato-stew",
+        "rice-pudding"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.6111,
+        "meanMissingEssentialAt3": 1,
+        "meanEssentialCoverageAt5": 0.5,
+        "meanMissingEssentialAt5": 1.4
+      },
+      "baseline": {
+        "firstRelevantRank": 6,
+        "reciprocalRank": 0.16666666666666666,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": 0,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": 0,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.2778,
+        "meanMissingEssentialAt3": 2,
+        "meanEssentialCoverageAt5": 0.2333,
+        "meanMissingEssentialAt5": 2.2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "basket-chickpea-tomato-stew",
+      "description": "Chickpeas, tomato concentrate and olive oil target chickpea tomato stew.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "chickpea-tomato-stew"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "chickpeas",
+        "olive_oil",
+        "tomato"
+      ],
+      "systemTop5": [
+        "chickpea-tomato-stew",
+        "tomato-pantry-pasta",
+        "classic-omelette",
+        "cheesy-tomato-pasta",
+        "mushroom-pea-rice"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.7222,
+        "meanMissingEssentialAt3": 0.6667,
+        "meanEssentialCoverageAt5": 0.5833,
+        "meanMissingEssentialAt5": 1.4
+      },
+      "baseline": {
+        "firstRelevantRank": 5,
+        "reciprocalRank": 0.2,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": 0,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.3889,
+        "meanMissingEssentialAt3": 1.6667,
+        "meanEssentialCoverageAt5": 0.4333,
+        "meanMissingEssentialAt5": 1.6
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "basket-fluffy-pancakes",
+      "description": "Flour, eggs and milk target fluffy pancakes when peanut butter is absent.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "fluffy-pancakes"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "egg",
+        "flour",
+        "milk"
+      ],
+      "systemTop5": [
+        "fluffy-pancakes",
+        "peanut-butter-pancakes",
+        "classic-omelette",
+        "rice-pudding",
+        "tomato-pantry-pasta"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.75,
+        "meanMissingEssentialAt3": 0.6667,
+        "meanEssentialCoverageAt5": 0.5167,
+        "meanMissingEssentialAt5": 1.4
+      },
+      "baseline": {
+        "firstRelevantRank": 2,
+        "reciprocalRank": 0.5,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.5,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.3,
+        "meanMissingEssentialAt5": 2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "first recipe",
+          "passed": true,
+          "expected": "fluffy-pancakes",
+          "actual": "fluffy-pancakes"
+        }
+      ],
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "passed": true
+    },
+    {
+      "id": "basket-peanut-butter-pancakes",
+      "description": "The pancake batter plus peanut butter should prefer the more specific pancake recipe.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "peanut-butter-pancakes"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "egg",
+        "flour",
+        "milk",
+        "peanut_butter"
+      ],
+      "systemTop5": [
+        "peanut-butter-pancakes",
+        "fluffy-pancakes",
+        "classic-omelette",
+        "rice-pudding",
+        "tomato-pantry-pasta"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.8333,
+        "meanMissingEssentialAt3": 0.3333,
+        "meanEssentialCoverageAt5": 0.5667,
+        "meanMissingEssentialAt5": 1.2
+      },
+      "baseline": {
+        "firstRelevantRank": 10,
+        "reciprocalRank": 0.1,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": 0,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": 0,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.5,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.3,
+        "meanMissingEssentialAt5": 2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "first recipe",
+          "passed": true,
+          "expected": "peanut-butter-pancakes",
+          "actual": "peanut-butter-pancakes"
+        }
+      ],
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "passed": true
+    },
+    {
+      "id": "basket-rice-pudding",
+      "description": "Rice, milk and sugar target rice pudding at the approved family quantities.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "rice-pudding"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "milk",
+        "rice",
+        "sugar"
+      ],
+      "systemTop5": [
+        "rice-pudding",
+        "fluffy-pancakes",
+        "mushroom-pea-rice",
+        "peanut-butter-pancakes",
+        "classic-omelette"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.5278,
+        "meanMissingEssentialAt3": 1.6667,
+        "meanEssentialCoverageAt5": 0.3667,
+        "meanMissingEssentialAt5": 2
+      },
+      "baseline": {
+        "firstRelevantRank": 9,
+        "reciprocalRank": 0.1111111111111111,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": 0,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": 0,
+        "meanEssentialCoverageAt1": 0,
+        "meanMissingEssentialAt1": 2,
+        "meanEssentialCoverageAt3": 0.1111,
+        "meanMissingEssentialAt3": 2.3333,
+        "meanEssentialCoverageAt5": 0.0667,
+        "meanMissingEssentialAt5": 2.6
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "basket-tuna-pasta-salad-sufficient",
+      "description": "Two 130 g tuna cans (260 g) plus pasta and mayonnaise meet the 250 g tuna requirement.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "tuna-pasta-salad"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "canned_tuna",
+        "mayonnaise",
+        "pasta"
+      ],
+      "systemTop5": [
+        "tuna-pasta-salad",
+        "tuna-tortilla-wrap",
+        "tomato-pantry-pasta",
+        "cheesy-tomato-pasta",
+        "classic-omelette"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.6667,
+        "meanMissingEssentialAt3": 1,
+        "meanEssentialCoverageAt5": 0.45,
+        "meanMissingEssentialAt5": 1.6
+      },
+      "baseline": {
+        "firstRelevantRank": 4,
+        "reciprocalRank": 0.25,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": 0,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 0,
+        "meanMissingEssentialAt1": 2,
+        "meanEssentialCoverageAt3": 0.1111,
+        "meanMissingEssentialAt3": 2.3333,
+        "meanEssentialCoverageAt5": 0.2667,
+        "meanMissingEssentialAt5": 2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna status",
+          "passed": true,
+          "expected": [
+            "sufficient"
+          ],
+          "actual": "sufficient"
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna availableAmount",
+          "passed": true,
+          "expected": 260,
+          "actual": 260
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna availableUnit",
+          "passed": true,
+          "expected": "g",
+          "actual": "g"
+        }
+      ],
+      "checksPassed": 4,
+      "checksTotal": 4,
+      "passed": true
+    },
+    {
+      "id": "history-only-pasta",
+      "description": "When the basket has no usable mapping, validated history supplies presence evidence, not current inventory.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "tomato-pantry-pasta"
+      ],
+      "evidenceSource": "history",
+      "mappedIngredientKeys": [
+        "olive_oil",
+        "pasta",
+        "tomato"
+      ],
+      "systemTop5": [
+        "tomato-pantry-pasta",
+        "cheesy-tomato-pasta",
+        "chickpea-tomato-stew",
+        "classic-omelette",
+        "tuna-pasta-salad"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.8056,
+        "meanMissingEssentialAt3": 0.6667,
+        "meanEssentialCoverageAt5": 0.65,
+        "meanMissingEssentialAt5": 1
+      },
+      "baseline": {
+        "firstRelevantRank": 3,
+        "reciprocalRank": 0.3333333333333333,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": 0,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.5,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.5,
+        "meanMissingEssentialAt5": 1.4
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "history",
+          "actual": "history"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "basket-priority-over-history",
+      "description": "Mapped current-basket evidence must take priority over a different history pattern.",
+      "retrievalMetricEligible": true,
+      "relevantRecipeIds": [
+        "classic-omelette"
+      ],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "egg",
+        "olive_oil"
+      ],
+      "systemTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "chickpea-tomato-stew",
+        "mushroom-pea-rice"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.5556,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.45,
+        "meanMissingEssentialAt5": 1.8
+      },
+      "baseline": {
+        "firstRelevantRank": 1,
+        "reciprocalRank": 1,
+        "hitAt1": 1,
+        "precisionAt1": 1,
+        "recallAt1": 1,
+        "hitAt3": 1,
+        "precisionAt3": 0.3333333333333333,
+        "recallAt3": 1,
+        "hitAt5": 1,
+        "precisionAt5": 0.2,
+        "recallAt5": 1,
+        "meanEssentialCoverageAt1": 1,
+        "meanMissingEssentialAt1": 0,
+        "meanEssentialCoverageAt3": 0.5556,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.4,
+        "meanMissingEssentialAt5": 1.8
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        }
+      ],
+      "checksPassed": 1,
+      "checksTotal": 1,
+      "passed": true
+    },
+    {
+      "id": "guardrail-insufficient-eggs",
+      "description": "Two eggs are present but must not be described as sufficient for a three-egg omelette.",
+      "retrievalMetricEligible": false,
+      "relevantRecipeIds": [],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "egg",
+        "olive_oil"
+      ],
+      "systemTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "chickpea-tomato-stew",
+        "mushroom-pea-rice"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.3889,
+        "meanMissingEssentialAt3": 1.6667,
+        "meanEssentialCoverageAt5": 0.35,
+        "meanMissingEssentialAt5": 2
+      },
+      "baseline": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": 0.5,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.3889,
+        "meanMissingEssentialAt3": 1.6667,
+        "meanEssentialCoverageAt5": 0.3,
+        "meanMissingEssentialAt5": 2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "classic-omelette/egg status",
+          "passed": true,
+          "expected": [
+            "insufficient"
+          ],
+          "actual": "insufficient"
+        },
+        {
+          "name": "classic-omelette/egg availableAmount",
+          "passed": true,
+          "expected": 2,
+          "actual": 2
+        },
+        {
+          "name": "classic-omelette/egg availableUnit",
+          "passed": true,
+          "expected": "piece",
+          "actual": "piece"
+        }
+      ],
+      "checksPassed": 4,
+      "checksTotal": 4,
+      "passed": true
+    },
+    {
+      "id": "guardrail-insufficient-tuna",
+      "description": "One 130 g tuna can is present but must not be described as sufficient for a 250 g tuna pasta salad.",
+      "retrievalMetricEligible": false,
+      "relevantRecipeIds": [],
+      "evidenceSource": "basket",
+      "mappedIngredientKeys": [
+        "canned_tuna",
+        "mayonnaise",
+        "pasta"
+      ],
+      "systemTop5": [
+        "tuna-pasta-salad",
+        "tuna-tortilla-wrap",
+        "tomato-pantry-pasta",
+        "cheesy-tomato-pasta",
+        "classic-omelette"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": 0.6667,
+        "meanMissingEssentialAt1": 1,
+        "meanEssentialCoverageAt3": 0.5556,
+        "meanMissingEssentialAt3": 1.3333,
+        "meanEssentialCoverageAt5": 0.3833,
+        "meanMissingEssentialAt5": 1.8
+      },
+      "baseline": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": 0,
+        "meanMissingEssentialAt1": 2,
+        "meanEssentialCoverageAt3": 0.1111,
+        "meanMissingEssentialAt3": 2.3333,
+        "meanEssentialCoverageAt5": 0.2,
+        "meanMissingEssentialAt5": 2.2
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "basket",
+          "actual": "basket"
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna status",
+          "passed": true,
+          "expected": [
+            "insufficient"
+          ],
+          "actual": "insufficient"
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna availableAmount",
+          "passed": true,
+          "expected": 130,
+          "actual": 130
+        },
+        {
+          "name": "tuna-pasta-salad/canned_tuna availableUnit",
+          "passed": true,
+          "expected": "g",
+          "actual": "g"
+        }
+      ],
+      "checksPassed": 4,
+      "checksTotal": 4,
+      "passed": true
+    },
+    {
+      "id": "guardrail-non-food-egg-language",
+      "description": "Kitchen tools, confectionery and pet food containing egg words must not become egg evidence.",
+      "retrievalMetricEligible": false,
+      "relevantRecipeIds": [],
+      "evidenceSource": "popularity",
+      "mappedIngredientKeys": [],
+      "systemTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": null,
+        "meanMissingEssentialAt1": null,
+        "meanEssentialCoverageAt3": null,
+        "meanMissingEssentialAt3": null,
+        "meanEssentialCoverageAt5": null,
+        "meanMissingEssentialAt5": null
+      },
+      "baseline": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": null,
+        "meanMissingEssentialAt1": null,
+        "meanEssentialCoverageAt3": null,
+        "meanMissingEssentialAt3": null,
+        "meanEssentialCoverageAt5": null,
+        "meanMissingEssentialAt5": null
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "popularity",
+          "actual": "popularity"
+        },
+        {
+          "name": "mapped ingredient keys",
+          "passed": true,
+          "expected": [],
+          "actual": []
+        }
+      ],
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "passed": true
+    },
+    {
+      "id": "guardrail-cold-start",
+      "description": "No mapped evidence should use the authored popularity fallback without personalised claims.",
+      "retrievalMetricEligible": false,
+      "relevantRecipeIds": [],
+      "evidenceSource": "popularity",
+      "mappedIngredientKeys": [],
+      "systemTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "baselineTop5": [
+        "classic-omelette",
+        "fluffy-pancakes",
+        "tomato-pantry-pasta",
+        "tuna-pasta-salad",
+        "chickpea-tomato-stew"
+      ],
+      "system": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": null,
+        "meanMissingEssentialAt1": null,
+        "meanEssentialCoverageAt3": null,
+        "meanMissingEssentialAt3": null,
+        "meanEssentialCoverageAt5": null,
+        "meanMissingEssentialAt5": null
+      },
+      "baseline": {
+        "firstRelevantRank": null,
+        "reciprocalRank": 0,
+        "hitAt1": 0,
+        "precisionAt1": 0,
+        "recallAt1": null,
+        "hitAt3": 0,
+        "precisionAt3": 0,
+        "recallAt3": null,
+        "hitAt5": 0,
+        "precisionAt5": 0,
+        "recallAt5": null,
+        "meanEssentialCoverageAt1": null,
+        "meanMissingEssentialAt1": null,
+        "meanEssentialCoverageAt3": null,
+        "meanMissingEssentialAt3": null,
+        "meanEssentialCoverageAt5": null,
+        "meanMissingEssentialAt5": null
+      },
+      "checks": [
+        {
+          "name": "evidence source",
+          "passed": true,
+          "expected": "popularity",
+          "actual": "popularity"
+        },
+        {
+          "name": "first recipe",
+          "passed": true,
+          "expected": "classic-omelette",
+          "actual": "classic-omelette"
+        }
+      ],
+      "checksPassed": 2,
+      "checksTotal": 2,
+      "passed": true
+    }
+  ]
+}

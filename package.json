@@ -1,0 +1,11 @@
+{
+  "name": "smartbasket",
+  "private": true,
+  "description": "SmartBasket dissertation prototype: mobile shopping assistant, staff console, and API.",
+  "scripts": {
+    "demo:server": "npm run demo --prefix server",
+    "dev:server": "npm run dev --prefix server",
+    "dev:client": "npm run dev --prefix client",
+    "start:server": "npm start --prefix server"
+  }
+}

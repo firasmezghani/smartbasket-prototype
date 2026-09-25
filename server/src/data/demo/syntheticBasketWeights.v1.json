@@ -1,0 +1,374 @@
+{
+  "$note": "SmartBasket-owned fictional demonstration weights for cashier arithmetic. Not measured. Not derived from product names, recipe quantities, or source Poids. Keys are the 91 curated visible product IDs from curated-v3-approved.json. Do not treat these values as packaged mass.",
+  "fixtureVersion": "v1",
+  "provenance": "synthetic",
+  "unit": "g",
+  "basis": "fictional_demonstration",
+  "productCount": 91,
+  "weights": [
+    {
+      "productId": "00e000f3-0621-469c-bde0-addf3c6f3676",
+      "grams": 75
+    },
+    {
+      "productId": "028d8fc8-cd26-4b5b-a8ab-d37bf03ad884",
+      "grams": 110
+    },
+    {
+      "productId": "03eba501-0bf9-480c-a3b6-a3a3eb1bc78b",
+      "grams": 160
+    },
+    {
+      "productId": "049b4b34-9b24-47db-a176-3f17043ff1dd",
+      "grams": 220
+    },
+    {
+      "productId": "054a53e0-92e9-444e-939f-540beef1b2c2",
+      "grams": 280
+    },
+    {
+      "productId": "0595659f-b862-4228-bc75-c5a557cceb96",
+      "grams": 350
+    },
+    {
+      "productId": "09603f7c-23c4-414d-9649-0fa32dec173d",
+      "grams": 420
+    },
+    {
+      "productId": "0cadc996-0a28-4cc1-ab43-82acd692f7cc",
+      "grams": 500
+    },
+    {
+      "productId": "0dcabf27-e47f-494f-9194-3d8662d00c9e",
+      "grams": 650
+    },
+    {
+      "productId": "117eea46-d9fc-4d4d-8156-e303d0e1e70e",
+      "grams": 800
+    },
+    {
+      "productId": "1322d213-7103-4f0a-a34b-4cd01794ec35",
+      "grams": 950
+    },
+    {
+      "productId": "13575893-d5a4-4831-9785-0f7c59a51210",
+      "grams": 1100
+    },
+    {
+      "productId": "16cefdae-93ee-4274-8635-e10a062dc732",
+      "grams": 1250
+    },
+    {
+      "productId": "19fffcaf-5342-4f31-849e-cd23f06cb3df",
+      "grams": 1500
+    },
+    {
+      "productId": "1e7a7950-4046-43f6-abf4-28a54ab484c3",
+      "grams": 1800
+    },
+    {
+      "productId": "210d449d-d2ca-4339-bbbc-1f462b136278",
+      "grams": 75
+    },
+    {
+      "productId": "2370d1f4-9691-49e4-9fb8-056a6d81c4f6",
+      "grams": 110
+    },
+    {
+      "productId": "250ee63e-e059-4868-b1a4-ca1f393af612",
+      "grams": 160
+    },
+    {
+      "productId": "28582594-5118-430b-9f5c-4712044c152f",
+      "grams": 220
+    },
+    {
+      "productId": "2ebfb716-ba2f-42b5-938d-3dc01350c6c7",
+      "grams": 280
+    },
+    {
+      "productId": "307b00fd-1d09-4db5-b00f-7ae33d278863",
+      "grams": 350
+    },
+    {
+      "productId": "30ed373f-124f-4492-8699-b8a00c053e3e",
+      "grams": 420
+    },
+    {
+      "productId": "31dcb36d-2828-4b2b-87dc-e99205acc057",
+      "grams": 500
+    },
+    {
+      "productId": "348b18f8-99e7-48b5-bed5-15bae747bd6a",
+      "grams": 650
+    },
+    {
+      "productId": "35adbc76-3ba7-4ce4-9e38-10704376db53",
+      "grams": 800
+    },
+    {
+      "productId": "37637e60-1aff-49e4-be9b-9fc91e4e4742",
+      "grams": 950
+    },
+    {
+      "productId": "3946ef41-5dc4-4e5d-abc3-d31f1d001e2f",
+      "grams": 1100
+    },
+    {
+      "productId": "3b46c73b-a89a-43ee-a7de-169b301d1ab0",
+      "grams": 1250
+    },
+    {
+      "productId": "3c8778cb-10e1-4886-aaa5-3b9a801859c2",
+      "grams": 1500
+    },
+    {
+      "productId": "3d0a27e5-0f6c-4095-ab46-a7e0dfd3def1",
+      "grams": 1800
+    },
+    {
+      "productId": "3d7f143a-8551-41c2-9421-2396ae0a06b7",
+      "grams": 75
+    },
+    {
+      "productId": "3dab6101-83b4-4d64-a441-da68b820bec8",
+      "grams": 110
+    },
+    {
+      "productId": "43e5c424-cf93-4bb4-8dba-2a9e09a842cb",
+      "grams": 160
+    },
+    {
+      "productId": "45b36786-83e8-4198-8c7d-1b6ffac1cc40",
+      "grams": 220
+    },
+    {
+      "productId": "4636e246-ad49-479b-b434-632a80bf3558",
+      "grams": 280
+    },
+    {
+      "productId": "4a07ff21-9ea9-4f4f-a386-8d3c872f4f3b",
+      "grams": 350
+    },
+    {
+      "productId": "4f5f8e1a-aad0-4ca4-8947-2b4a87d41e44",
+      "grams": 420
+    },
+    {
+      "productId": "4fac144d-b3c1-4d52-97d5-86d5f63ade51",
+      "grams": 500
+    },
+    {
+      "productId": "4fe81182-3390-4a44-a386-264668df8c68",
+      "grams": 650
+    },
+    {
+      "productId": "54cf8f99-5415-4414-a60a-0afcdeb73e85",
+      "grams": 800
+    },
+    {
+      "productId": "5844137e-2a26-40da-b54f-4ffccfddcac9",
+      "grams": 950
+    },
+    {
+      "productId": "5b3a1c9c-b571-4a58-8689-21e88a92b2b1",
+      "grams": 1100
+    },
+    {
+      "productId": "5d56c954-08d2-4762-a54b-d9131f9f6b75",
+      "grams": 1250
+    },
+    {
+      "productId": "6e11bb8b-501e-4f95-9074-f9632e1dac8c",
+      "grams": 1500
+    },
+    {
+      "productId": "6f3e3f00-9197-418c-afc4-18f539868e01",
+      "grams": 1800
+    },
+    {
+      "productId": "7349aa33-5873-4bae-9e4a-44b0a1372248",
+      "grams": 75
+    },
+    {
+      "productId": "786ee07c-de60-49ef-b2c7-e37ffcda27e9",
+      "grams": 110
+    },
+    {
+      "productId": "7af41bd0-5e53-4208-9987-876c0fde6e31",
+      "grams": 160
+    },
+    {
+      "productId": "7e47e2e4-0444-46e4-9570-fc624843f819",
+      "grams": 220
+    },
+    {
+      "productId": "7e7a6291-f15f-4c50-bcfe-5acd0faeddd9",
+      "grams": 280
+    },
+    {
+      "productId": "7f803e48-6e9b-411c-8d34-1dd659976186",
+      "grams": 350
+    },
+    {
+      "productId": "8256e225-3c3f-4786-b775-e98eeaa08dd4",
+      "grams": 420
+    },
+    {
+      "productId": "88fffbd6-0912-4fba-b8d4-2027ec71fbb4",
+      "grams": 500
+    },
+    {
+      "productId": "8a944bd3-f2c4-4c32-a35b-eb1ef01815aa",
+      "grams": 650
+    },
+    {
+      "productId": "8befc684-ca36-432f-b28f-58e0046fd846",
+      "grams": 800
+    },
+    {
+      "productId": "8fb7916c-f92b-4ea9-a42c-7e5ee30c05d2",
+      "grams": 950
+    },
+    {
+      "productId": "9441920d-95ec-47bb-86b4-0a1bdb2280f2",
+      "grams": 1100
+    },
+    {
+      "productId": "99c8a8c0-e20f-46d1-9389-883152b5a37a",
+      "grams": 1250
+    },
+    {
+      "productId": "9bd35753-e257-4c32-81d2-20cb7d7ecb70",
+      "grams": 1500
+    },
+    {
+      "productId": "9c0726d2-5683-40c8-897c-6d4e8eb8e8bf",
+      "grams": 1800
+    },
+    {
+      "productId": "9d3d92db-b588-422c-967c-227e1a5bcef6",
+      "grams": 75
+    },
+    {
+      "productId": "9dddf6b3-c292-41cb-947a-2b4caffe5204",
+      "grams": 110
+    },
+    {
+      "productId": "9fc8f297-26d8-4583-9990-72ebc193c62e",
+      "grams": 160
+    },
+    {
+      "productId": "a830f815-3d88-4f4b-8343-22295d6dd627",
+      "grams": 220
+    },
+    {
+      "productId": "a9a6aad0-8dc1-4275-b0fe-33d84bb30a4d",
+      "grams": 280
+    },
+    {
+      "productId": "aa0571b3-ec42-479d-944b-9549c8cc3278",
+      "grams": 350
+    },
+    {
+      "productId": "ae63f17c-f01d-454f-84a8-59bebc68b625",
+      "grams": 420
+    },
+    {
+      "productId": "af7fdb56-23e4-43e1-b459-b21421085eaa",
+      "grams": 500
+    },
+    {
+      "productId": "b188d9e5-8b73-4243-86be-7fe78eda4992",
+      "grams": 650
+    },
+    {
+      "productId": "b516f359-d925-4a49-b932-c4bac4270258",
+      "grams": 800
+    },
+    {
+      "productId": "b5d54caf-5fa9-4af1-a99a-cb6579110cd5",
+      "grams": 950
+    },
+    {
+      "productId": "bf60ebd8-3283-4217-9af6-ba29c814bc88",
+      "grams": 1100
+    },
+    {
+      "productId": "c351e4cb-cb3a-4a4e-b47b-562f1470d52a",
+      "grams": 1250
+    },
+    {
+      "productId": "c49df50e-1745-4ede-b4d6-c48852905fbb",
+      "grams": 1500
+    },
+    {
+      "productId": "c4bf88c0-224d-4ec4-bdc2-7954041c5a0d",
+      "grams": 1800
+    },
+    {
+      "productId": "c756b52b-f1e4-42d7-bb9a-1e34ed21cb05",
+      "grams": 75
+    },
+    {
+      "productId": "cffb667c-47a8-463d-b7d8-33eda718582c",
+      "grams": 110
+    },
+    {
+      "productId": "d5bd5566-cf79-4221-a61d-33f45e2637c0",
+      "grams": 160
+    },
+    {
+      "productId": "dbdd6645-7af3-4e39-8648-091a0b95dcbf",
+      "grams": 220
+    },
+    {
+      "productId": "dc50eef5-611c-4f0a-a2fc-4ef74be6da3d",
+      "grams": 280
+    },
+    {
+      "productId": "df49ae4c-9e8d-4bdc-9906-8935b0af5998",
+      "grams": 350
+    },
+    {
+      "productId": "e1b16295-12fb-43f7-bc41-d9e808f86588",
+      "grams": 420
+    },
+    {
+      "productId": "e486e15b-9e7c-4f22-83e8-bb0c99367784",
+      "grams": 500
+    },
+    {
+      "productId": "ec6a5d0f-247d-4c91-980c-f61991199d0b",
+      "grams": 650
+    },
+    {
+      "productId": "f024c13c-70e0-44db-90c5-d085fec895f4",
+      "grams": 800
+    },
+    {
+      "productId": "f5e16af8-56d7-4872-8f69-6a5054d83515",
+      "grams": 950
+    },
+    {
+      "productId": "faa23976-85f6-48b5-9d3c-3b8f9ae56197",
+      "grams": 1100
+    },
+    {
+      "productId": "fb01380e-5817-45f9-a044-e8c404d0c956",
+      "grams": 1250
+    },
+    {
+      "productId": "fb476650-a888-4556-8872-ab68b1e61c62",
+      "grams": 1500
+    },
+    {
+      "productId": "fb82de1c-d9fd-45f8-9a9c-e74f06072966",
+      "grams": 1800
+    },
+    {
+      "productId": "ff348018-eb41-4b6b-93f2-5c51047d8f75",
+      "grams": 75
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "generatedAt": "2026-09-19T01:24:01.704Z",
+  "catalogueMode": "curated",
+  "counts": {
+    "ImportedProducts": 23220,
+    "ImportedActive": 23220,
+    "ImportedBarcodes": 23263,
+    "MetadataRows": 202,
+    "CuratedAnyVersion": 91,
+    "CuratedVersion3": 91,
+    "LeftoverV1V2": 0,
+    "CuratedHidden": 0,
+    "InterpretationOverrides": 0
+  },
+  "visibleCount": 91,
+  "apiTotal": 91,
+  "apiLimit": 1,
+  "poids": {
+    "importedMatchingColumns": [],
+    "sourceAccess": "readable_weight_column",
+    "sourceTableFound": true,
+    "sourceMatchingColumns": [
+      {
+        "table": "TabStock",
+        "column": "Poids",
+        "dataType": "float"
+      }
+    ],
+    "sourceSchemaError": null,
+    "liveFieldUsed": "authorised_source.Poids",
+    "sourceColumn": "TabStock.Poids",
+    "sourceActiveDistribution": {
+      "n": 23220,
+      "missing": 0,
+      "zero": 23219,
+      "positive": 1,
+      "negative": 0
+    },
+    "importedProductHasQuantityColumn": true
+  },
+  "importedProductColumns": [
+    "ProductId",
+    "ProductCode",
+    "ProductName",
+    "Description",
+    "FamilyCode",
+    "FamilyName",
+    "SubfamilyCode",
+    "SubfamilyName",
+    "Brand",
+    "Price",
+    "Quantity",
+    "IsActive",
+    "SourceUpdatedAt",
+    "ImportedAt"
+  ],
+  "classification": {
+    "typeDist": {
+      "(null)": 30,
+      "milk": 2,
+      "egg": 2,
+      "rice": 2,
+      "butter": 2,
+      "chickpeas": 2,
+      "mozzarella": 2,
+      "cheese": 2,
+      "parmesan": 1,
+      "flour": 2,
+      "mayonnaise": 2,
+      "canned_tuna": 2,
+      "pasta": 2,
+      "sugar": 2,
+      "peanut_butter": 2,
+      "peas": 2,
+      "tomato": 2,
+      "mushroom": 1,
+      "olive_oil": 2,
+      "tortilla": 1,
+      "non_food": 26
+    },
+    "catDist": {
+      "drinks": 12,
+      "food": 53,
+      "household": 13,
+      "other": 4,
+      "personal-care": 9
+    },
+    "packageUnitDist": {
+      "ml": 32,
+      "g": 49,
+      "piece": 2,
+      "(none)": 8
+    },
+    "recipeByCat": {
+      "drinks": {
+        "total": 12,
+        "recipe": 0,
+        "nullType": 12,
+        "nonFood": 0
+      },
+      "food": {
+        "total": 53,
+        "recipe": 35,
+        "nullType": 18,
+        "nonFood": 0
+      },
+      "household": {
+        "total": 13,
+        "recipe": 0,
+        "nullType": 0,
+        "nonFood": 13
+      },
+      "other": {
+        "total": 4,
+        "recipe": 0,
+        "nullType": 0,
+        "nonFood": 4
+      },
+      "personal-care": {
+        "total": 9,
+        "recipe": 0,
+        "nullType": 0,
+        "nonFood": 9
+      }
+    },
+    "milk": [
+      {
+        "id": "786ee07c-de60-49ef-b2c7-e37ffcda27e9",
+        "name": "Lait Délice UHT entier 1 L",
+        "package": "1000 ml"
+      },
+      {
+        "id": "250ee63e-e059-4868-b1a4-ca1f393af612",
+        "name": "Lait Delisso 1 l",
+        "package": "1000 ml"
+      }
+    ],
+    "eggs": [
+      {
+        "id": "4636e246-ad49-479b-b434-632a80bf3558",
+        "name": "Œufs El Mazraa — boîte de 6",
+        "package": "6 piece"
+      },
+      {
+        "id": "28582594-5118-430b-9f5c-4712044c152f",
+        "name": "Boite De 30 Oeufs El Firma",
+        "package": "30 piece"
+      }
+    ],
+    "butter": [
+      {
+        "id": "210d449d-d2ca-4339-bbbc-1f462b136278",
+        "name": "Beurre Délice 100 g",
+        "package": "100 g"
+      },
+      {
+        "id": "f5e16af8-56d7-4872-8f69-6a5054d83515",
+        "name": "Beurre Delice 200 Gr",
+        "package": "200 g"
+      }
+    ],
+    "peanutButter": [
+      {
+        "id": "2370d1f4-9691-49e4-9fb8-056a6d81c4f6",
+        "name": "Beurre De Cacahuete 360 g",
+        "package": "360 g"
+      },
+      {
+        "id": "0cadc996-0a28-4cc1-ab43-82acd692f7cc",
+        "name": "Beurre Cacahuete Vanoise 330 g",
+        "package": "330 g"
+      }
+    ],
+    "plantDrinkNameHits": [],
+    "drinksCount": 12,
+    "foodNullType": 18,
+    "drinksNullType": 12,
+    "nonFood": 26,
+    "recipeEligible": 35,
+    "overrideCount": 0
+  },
+  "images": {
+    "metadataPathSet": 0,
+    "metadataPathMissing": 91,
+    "importedImageUrls": "compatibility view stores UrlImage/UrlNormal/UrlPromo as NULL",
+    "importedBinary": "compatibility view stores imgArt as NULL"
+  },
+  "weight": {
+    "classCounts": {
+      "missing": 0,
+      "zero": 91,
+      "negative": 0,
+      "positive": 0,
+      "invalid": 0
+    },
+    "samples": {
+      "missing": [],
+      "zero": [
+        {
+          "productId": "d5bd5566-cf79-4221-a61d-33f45e2637c0",
+          "originalName": "COCA COLA 0.5 L",
+          "displayName": "Coca-Cola 0,5 L",
+          "rawWeight": "0"
+        },
+        {
+          "productId": "c4bf88c0-224d-4ec4-bdc2-7954041c5a0d",
+          "originalName": "BOGA CIDRE 0.5 L",
+          "displayName": "Boga Cidre 0,5 L",
+          "rawWeight": "0"
+        },
+        {
+          "productId": "af7fdb56-23e4-43e1-b459-b21421085eaa",
+          "originalName": "JUS DELICE ORANGE 1 L",
+          "displayName": "Jus Délice orange 1 L",
+          "rawWeight": "0"
+        },
+        {
+          "productId": "16cefdae-93ee-4274-8635-e10a062dc732",
+          "originalName": "VIVA CITRON 1L",
+          "displayName": "Viva Citron 1 l",
+          "rawWeight": "0"
+        },
+        {
+          "productId": "30ed373f-124f-4492-8699-b8a00c053e3e",
+          "originalName": "BOGA LIM 1 L",
+          "displayName": "Boga Lim 1 l",
+          "rawWeight": "0"
+        }
+      ],
+      "negative": [],
+      "positive": [],
+      "invalid": []
+    },
+    "curatedPackageWithG": 49,
+    "curatedPackageWithMl": 32,
+    "curatedPackageWithPiece": 2,
+    "curatedPackageMissing": 8,
+    "productsWithBarcodes": 91,
+    "productsMissingPrice": 0
+  },
+  "barcodes": {
+    "rows": 164,
+    "productsWithMultiple": 22,
+    "productsWithNone": 0
+  }
+}

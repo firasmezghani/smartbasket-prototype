@@ -1,0 +1,453 @@
+{
+  "$schemaVersion": 1,
+  "_note": "Synthetic, generic product-to-ingredient mapping rules for the SmartBasket prototype. No real company product names, brands or catalogue records appear here. Every ingredientKey must be declared by an operational recipe requirement or one of its anyOfKeys alternatives (Phase 3.5B 10-recipe set). Unused keys from the archived 20-recipe set were removed. Priority: exact phrase > synonym phrase > name token > family evidence > description evidence. Longer phrases are preferred over shorter ones. Rules carry generic EN + FR food vocabulary; language is not a proprietary signal.",
+  "packagingTerms": [
+    "own",
+    "brand",
+    "supermarket",
+    "store",
+    "cupboard",
+    "essentials",
+    "boite",
+    "boites",
+    "paquet",
+    "paquets",
+    "bouteille",
+    "bouteilles",
+    "pot",
+    "pots",
+    "sachet",
+    "sachets"
+  ],
+  "rules": [
+    {
+      "ingredientKey": "pasta",
+      "phrases": [
+        "dried pasta",
+        "wholewheat pasta",
+        "spaghetti",
+        "penne",
+        "fusilli",
+        "macaroni",
+        "tagliatelle",
+        "rigatoni",
+        "pasta"
+      ],
+      "tokens": [
+        "pasta",
+        "spaghetti",
+        "penne",
+        "fusilli",
+        "macaroni",
+        "tagliatelle",
+        "rigatoni"
+      ],
+      "families": [
+        "pasta",
+        "pasta and noodles"
+      ],
+      "descriptions": [
+        "durum wheat pasta",
+        "small pasta shapes"
+      ]
+    },
+    {
+      "ingredientKey": "tomato",
+      "phrases": [
+        "cherry tomatoes",
+        "chopped tomatoes",
+        "plum tomatoes",
+        "tinned tomatoes",
+        "tomato passata",
+        "fresh tomatoes",
+        "tomatoes",
+        "tomato",
+        "double concentre de tomate",
+        "concentre de tomate",
+        "concentre tomate",
+        "puree de tomate",
+        "coulis de tomate",
+        "tomates pelees",
+        "tomates",
+        "tomate"
+      ],
+      "tokens": [
+        "tomato",
+        "tomatoes",
+        "passata",
+        "tomate",
+        "tomates"
+      ],
+      "families": [
+        "tomatoes"
+      ],
+      "descriptions": [
+        "ripe red tomatoes"
+      ]
+    },
+    {
+      "ingredientKey": "olive_oil",
+      "phrases": [
+        "extra virgin olive oil",
+        "light olive oil",
+        "olive oil",
+        "huile d olive extra vierge",
+        "huile d olive vierge extra",
+        "huile d olive"
+      ],
+      "tokens": [],
+      "families": [
+        "olive oil"
+      ],
+      "descriptions": [
+        "cold pressed olive oil"
+      ]
+    },
+    {
+      "ingredientKey": "parmesan",
+      "phrases": [
+        "grated parmesan",
+        "parmesan cheese",
+        "parmigiano",
+        "parmesan"
+      ],
+      "tokens": [
+        "parmesan",
+        "parmigiano"
+      ],
+      "families": [],
+      "descriptions": [
+        "hard italian cheese for grating"
+      ]
+    },
+    {
+      "ingredientKey": "rice",
+      "phrases": [
+        "basmati rice",
+        "long grain rice",
+        "risotto rice",
+        "arborio rice",
+        "brown rice",
+        "white rice",
+        "rice",
+        "riz basmati",
+        "riz long grain",
+        "riz"
+      ],
+      "tokens": [
+        "rice",
+        "riz"
+      ],
+      "families": [
+        "rice"
+      ],
+      "descriptions": [
+        "dried white rice"
+      ]
+    },
+    {
+      "ingredientKey": "egg",
+      "phrases": [
+        "free range eggs",
+        "large eggs",
+        "medium eggs",
+        "eggs",
+        "egg",
+        "oeufs frais",
+        "oeuf frais",
+        "oeufs",
+        "oeuf"
+      ],
+      "tokens": [
+        "egg",
+        "eggs",
+        "oeuf",
+        "oeufs"
+      ],
+      "families": [
+        "eggs"
+      ],
+      "descriptions": [
+        "hen eggs"
+      ]
+    },
+    {
+      "ingredientKey": "peas",
+      "phrases": [
+        "garden peas",
+        "frozen peas",
+        "petit pois",
+        "peas"
+      ],
+      "tokens": [
+        "peas"
+      ],
+      "families": [],
+      "descriptions": [
+        "green garden peas"
+      ]
+    },
+    {
+      "ingredientKey": "chickpeas",
+      "phrases": [
+        "chick peas",
+        "garbanzo beans",
+        "chickpeas",
+        "pois chiches cuits",
+        "pois chiches",
+        "pois chiche"
+      ],
+      "tokens": [
+        "chickpeas"
+      ],
+      "families": [],
+      "descriptions": [
+        "cooked chickpeas in water"
+      ]
+    },
+    {
+      "ingredientKey": "mozzarella",
+      "phrases": [
+        "mozzarella pearls",
+        "buffalo mozzarella",
+        "grated mozzarella",
+        "mozzarella cheese",
+        "mozzarella"
+      ],
+      "tokens": [
+        "mozzarella"
+      ],
+      "families": [],
+      "descriptions": [
+        "soft mild italian cheese"
+      ]
+    },
+    {
+      "ingredientKey": "butter",
+      "phrases": [
+        "unsalted butter",
+        "salted butter",
+        "butter",
+        "beurre doux",
+        "beurre demi sel",
+        "beurre"
+      ],
+      "tokens": [
+        "butter",
+        "beurre"
+      ],
+      "families": [],
+      "descriptions": [
+        "dairy butter"
+      ]
+    },
+    {
+      "ingredientKey": "cheese",
+      "phrases": [
+        "mature cheddar",
+        "mild cheddar",
+        "cheddar cheese",
+        "grated cheese",
+        "cheese slices",
+        "cheddar",
+        "cheese"
+      ],
+      "tokens": [
+        "cheddar"
+      ],
+      "families": [
+        "cheese"
+      ],
+      "descriptions": [
+        "grated hard cheese"
+      ]
+    },
+    {
+      "ingredientKey": "mushroom",
+      "phrases": [
+        "chestnut mushrooms",
+        "button mushrooms",
+        "closed cup mushrooms",
+        "sliced mushrooms",
+        "mushrooms",
+        "mushroom"
+      ],
+      "tokens": [
+        "mushroom",
+        "mushrooms"
+      ],
+      "families": [
+        "mushrooms"
+      ],
+      "descriptions": [
+        "fresh sliced mushrooms"
+      ]
+    },
+    {
+      "ingredientKey": "canned_tuna",
+      "phrases": [
+        "tinned tuna",
+        "canned tuna",
+        "tuna chunks",
+        "tuna flakes",
+        "tuna in spring water",
+        "tuna in brine",
+        "tuna",
+        "miettes de thon",
+        "thon au naturel",
+        "thon a l huile",
+        "thon"
+      ],
+      "tokens": [
+        "tuna",
+        "thon"
+      ],
+      "families": [],
+      "descriptions": [
+        "skipjack tuna in water"
+      ]
+    },
+    {
+      "ingredientKey": "sweetcorn",
+      "phrases": [
+        "tinned sweetcorn",
+        "canned sweetcorn",
+        "sweet corn",
+        "sweetcorn"
+      ],
+      "tokens": [
+        "sweetcorn"
+      ],
+      "families": [],
+      "descriptions": [
+        "golden corn kernels"
+      ]
+    },
+    {
+      "ingredientKey": "mayonnaise",
+      "phrases": [
+        "light mayonnaise",
+        "real mayonnaise",
+        "mayonnaise",
+        "mayo"
+      ],
+      "tokens": [
+        "mayonnaise",
+        "mayo"
+      ],
+      "families": [],
+      "descriptions": [
+        "egg mayonnaise"
+      ]
+    },
+    {
+      "ingredientKey": "tortilla",
+      "phrases": [
+        "corn tortillas",
+        "flour tortillas",
+        "soft tortillas",
+        "tortilla wraps",
+        "tortillas",
+        "tortilla"
+      ],
+      "tokens": [
+        "tortilla",
+        "tortillas"
+      ],
+      "families": [],
+      "descriptions": [
+        "soft wheat tortillas"
+      ]
+    },
+    {
+      "ingredientKey": "flour",
+      "phrases": [
+        "plain flour",
+        "self raising flour",
+        "all purpose flour",
+        "strong white flour",
+        "wholemeal flour",
+        "flour",
+        "farine de ble",
+        "farine patissiere",
+        "farine"
+      ],
+      "tokens": [
+        "flour",
+        "farine"
+      ],
+      "families": [
+        "flour"
+      ],
+      "descriptions": [
+        "wheat flour for baking"
+      ]
+    },
+    {
+      "ingredientKey": "milk",
+      "phrases": [
+        "whole milk",
+        "semi skimmed milk",
+        "skimmed milk",
+        "full fat milk",
+        "milk",
+        "lait entier",
+        "lait demi ecreme",
+        "lait ecreme",
+        "lait uht",
+        "lait"
+      ],
+      "tokens": [
+        "milk",
+        "lait"
+      ],
+      "families": [
+        "fresh milk"
+      ],
+      "descriptions": [
+        "fresh pasteurised milk"
+      ]
+    },
+    {
+      "ingredientKey": "sugar",
+      "phrases": [
+        "caster sugar",
+        "granulated sugar",
+        "brown sugar",
+        "icing sugar",
+        "sugar",
+        "sucre en poudre",
+        "sucre semoule",
+        "sucre cristallise",
+        "sucre glace",
+        "sucre roux",
+        "sucre"
+      ],
+      "tokens": [
+        "sugar",
+        "sucre"
+      ],
+      "families": [],
+      "descriptions": [
+        "white granulated sugar"
+      ]
+    },
+    {
+      "ingredientKey": "peanut_butter",
+      "phrases": [
+        "smooth peanut butter",
+        "crunchy peanut butter",
+        "peanut butter",
+        "beurre de cacahuete",
+        "beurre de cacahuetes",
+        "beurre cacahuete",
+        "beurre d arachide"
+      ],
+      "tokens": [],
+      "families": [],
+      "descriptions": [
+        "roasted peanut butter"
+      ]
+    }
+  ]
+}

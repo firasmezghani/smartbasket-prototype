@@ -1,0 +1,200 @@
+{
+  "$schemaVersion": 1,
+  "recipes": [
+    {
+      "id": "classic-omelette",
+      "name": "Classic Omelette",
+      "description": "A plain folded omelette that cooks in a few minutes for one person.",
+      "cuisine": "french",
+      "category": "breakfast",
+      "prepTimeMinutes": 10,
+      "difficulty": "easy",
+      "fallbackRank": 1,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        {
+          "key": "egg",
+          "label": "Eggs",
+          "essential": true,
+          "quantityText": "3",
+          "requiredAmount": 3,
+          "requiredUnit": "piece",
+          "anyOfKeys": ["egg"]
+        },
+        {
+          "key": "butter",
+          "label": "Butter or olive oil",
+          "labelKey": "recipe.reqLabel.cookingFat",
+          "essential": true,
+          "quantityText": "1 knob butter or a little olive oil",
+          "anyOfKeys": ["butter", "olive_oil"]
+        },
+        { "key": "cheese", "label": "Grated cheese", "essential": false, "quantityText": "30 g" }
+      ]
+    },
+    {
+      "id": "fluffy-pancakes",
+      "name": "Fluffy Pancakes",
+      "description": "Simple stovetop pancakes from a three-ingredient batter.",
+      "cuisine": "international",
+      "category": "breakfast",
+      "prepTimeMinutes": 20,
+      "difficulty": "easy",
+      "fallbackRank": 2,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "flour", "label": "Plain flour", "essential": true, "quantityText": "200 g", "requiredAmount": 200, "requiredUnit": "g", "anyOfKeys": ["flour"] },
+        { "key": "egg", "label": "Eggs", "essential": true, "quantityText": "2", "requiredAmount": 2, "requiredUnit": "piece", "anyOfKeys": ["egg"] },
+        { "key": "milk", "label": "Milk", "essential": true, "quantityText": "300 ml", "requiredAmount": 300, "requiredUnit": "ml", "anyOfKeys": ["milk"] },
+        { "key": "sugar", "label": "Sugar", "essential": false, "quantityText": "1 tbsp" },
+        { "key": "butter", "label": "Butter", "essential": false, "quantityText": "for the pan" }
+      ]
+    },
+    {
+      "id": "tomato-pantry-pasta",
+      "name": "Tomato Pantry Pasta",
+      "description": "Dry pasta tossed with tomato concentrate and olive oil. A cupboard supper, not a fresh-tomato salad.",
+      "cuisine": "italian",
+      "category": "main",
+      "prepTimeMinutes": 20,
+      "difficulty": "easy",
+      "fallbackRank": 3,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "pasta", "label": "Pasta", "essential": true, "quantityText": "300 g", "requiredAmount": 300, "requiredUnit": "g", "anyOfKeys": ["pasta"] },
+        { "key": "tomato", "label": "Tomato concentrate or sauce", "essential": true, "quantityText": "1 tin / tube", "anyOfKeys": ["tomato"] },
+        { "key": "olive_oil", "label": "Olive oil", "essential": true, "quantityText": "2 tbsp", "anyOfKeys": ["olive_oil"] }
+      ]
+    },
+    {
+      "id": "tuna-pasta-salad",
+      "name": "Tuna Pasta Salad",
+      "description": "Cold pasta mixed with canned tuna and mayonnaise. Sweetcorn is optional if present; it is not faked.",
+      "cuisine": "international",
+      "category": "main",
+      "prepTimeMinutes": 15,
+      "difficulty": "easy",
+      "fallbackRank": 4,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "pasta", "label": "Pasta", "essential": true, "quantityText": "250 g", "requiredAmount": 250, "requiredUnit": "g", "anyOfKeys": ["pasta"] },
+        { "key": "canned_tuna", "label": "Tinned tuna", "essential": true, "quantityText": "250 g (two small cans)", "requiredAmount": 250, "requiredUnit": "g", "anyOfKeys": ["canned_tuna"] },
+        { "key": "mayonnaise", "label": "Mayonnaise", "essential": true, "quantityText": "3 tbsp", "anyOfKeys": ["mayonnaise"] },
+        { "key": "sweetcorn", "label": "Sweetcorn", "essential": false, "quantityText": "optional" }
+      ]
+    },
+    {
+      "id": "chickpea-tomato-stew",
+      "name": "Chickpea Tomato Stew",
+      "description": "Chickpeas simmered with tomato concentrate and olive oil. Not a curry: no coconut milk, onion or curry powder is claimed.",
+      "cuisine": "mediterranean",
+      "category": "main",
+      "prepTimeMinutes": 25,
+      "difficulty": "easy",
+      "fallbackRank": 5,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "chickpeas", "label": "Chickpeas", "essential": true, "quantityText": "1 tin", "requiredAmount": 400, "requiredUnit": "g", "anyOfKeys": ["chickpeas"] },
+        { "key": "tomato", "label": "Tomato concentrate or sauce", "essential": true, "quantityText": "1 tin / tube", "anyOfKeys": ["tomato"] },
+        { "key": "olive_oil", "label": "Olive oil", "essential": true, "quantityText": "2 tbsp", "anyOfKeys": ["olive_oil"] }
+      ]
+    },
+    {
+      "id": "mushroom-pea-rice",
+      "name": "Mushroom and Pea Rice",
+      "description": "Rice cooked with canned mushrooms, canned peas and butter or olive oil. A pantry rice, not an arborio risotto.",
+      "cuisine": "international",
+      "category": "main",
+      "prepTimeMinutes": 30,
+      "difficulty": "easy",
+      "fallbackRank": 6,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "rice", "label": "Rice", "essential": true, "quantityText": "300 g", "requiredAmount": 300, "requiredUnit": "g", "anyOfKeys": ["rice"] },
+        { "key": "mushroom", "label": "Canned mushrooms", "essential": true, "quantityText": "1 tin", "anyOfKeys": ["mushroom"] },
+        { "key": "peas", "label": "Peas", "essential": true, "quantityText": "1 tin", "anyOfKeys": ["peas"] },
+        {
+          "key": "butter",
+          "label": "Butter or olive oil",
+          "labelKey": "recipe.reqLabel.cookingFat",
+          "essential": true,
+          "quantityText": "a knob of butter or a little olive oil",
+          "anyOfKeys": ["butter", "olive_oil"]
+        }
+      ]
+    },
+    {
+      "id": "tuna-tortilla-wrap",
+      "name": "Tuna Tortilla Wrap",
+      "description": "A wheat tortilla filled with canned tuna and mayonnaise. Cheese is optional.",
+      "cuisine": "international",
+      "category": "main",
+      "prepTimeMinutes": 10,
+      "difficulty": "easy",
+      "fallbackRank": 7,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "tortilla", "label": "Tortillas", "essential": true, "quantityText": "2", "anyOfKeys": ["tortilla"] },
+        { "key": "canned_tuna", "label": "Tinned tuna", "essential": true, "quantityText": "1 small tin", "requiredAmount": 80, "requiredUnit": "g", "anyOfKeys": ["canned_tuna"] },
+        { "key": "mayonnaise", "label": "Mayonnaise", "essential": true, "quantityText": "2 tbsp", "anyOfKeys": ["mayonnaise"] },
+        { "key": "cheese", "label": "Cheese", "essential": false, "quantityText": "optional", "anyOfKeys": ["cheese", "mozzarella"] }
+      ]
+    },
+    {
+      "id": "cheesy-tomato-pasta",
+      "name": "Cheesy Tomato Pasta",
+      "description": "Pasta with tomato concentrate, olive oil and a genuine cheese. Parmesan, mozzarella or a labelled cheese all satisfy the cheese requirement.",
+      "cuisine": "italian",
+      "category": "main",
+      "prepTimeMinutes": 20,
+      "difficulty": "easy",
+      "fallbackRank": 8,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "pasta", "label": "Pasta", "essential": true, "quantityText": "300 g", "requiredAmount": 300, "requiredUnit": "g", "anyOfKeys": ["pasta"] },
+        { "key": "tomato", "label": "Tomato concentrate or sauce", "essential": true, "quantityText": "1 tin / tube", "anyOfKeys": ["tomato"] },
+        { "key": "olive_oil", "label": "Olive oil", "essential": true, "quantityText": "2 tbsp", "anyOfKeys": ["olive_oil"] },
+        {
+          "key": "cheese",
+          "label": "Cheese (parmesan, mozzarella or labelled cheese)",
+          "essential": true,
+          "quantityText": "to serve",
+          "anyOfKeys": ["cheese", "mozzarella", "parmesan"]
+        }
+      ]
+    },
+    {
+      "id": "rice-pudding",
+      "name": "Rice Pudding",
+      "description": "Rice simmered in milk with sugar. A genuine dessert from pantry staples, not a muffin substitute.",
+      "cuisine": "international",
+      "category": "dessert",
+      "prepTimeMinutes": 40,
+      "difficulty": "easy",
+      "fallbackRank": 9,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "rice", "label": "Rice", "essential": true, "quantityText": "150 g", "requiredAmount": 150, "requiredUnit": "g", "anyOfKeys": ["rice"] },
+        { "key": "milk", "label": "Milk", "essential": true, "quantityText": "1 L", "requiredAmount": 1000, "requiredUnit": "ml", "anyOfKeys": ["milk"] },
+        { "key": "sugar", "label": "Sugar", "essential": true, "quantityText": "80 g", "requiredAmount": 80, "requiredUnit": "g", "anyOfKeys": ["sugar"] }
+      ]
+    },
+    {
+      "id": "peanut-butter-pancakes",
+      "name": "Peanut-Butter Pancakes",
+      "description": "The pancake batter plus peanut butter.",
+      "cuisine": "international",
+      "category": "breakfast",
+      "prepTimeMinutes": 20,
+      "difficulty": "easy",
+      "fallbackRank": 10,
+      "source": { "name": "SmartBasket synthetic recipe dataset", "licence": "CC0-1.0", "url": null },
+      "ingredients": [
+        { "key": "flour", "label": "Plain flour", "essential": true, "quantityText": "200 g", "requiredAmount": 200, "requiredUnit": "g", "anyOfKeys": ["flour"] },
+        { "key": "egg", "label": "Eggs", "essential": true, "quantityText": "2", "requiredAmount": 2, "requiredUnit": "piece", "anyOfKeys": ["egg"] },
+        { "key": "milk", "label": "Milk", "essential": true, "quantityText": "300 ml", "requiredAmount": 300, "requiredUnit": "ml", "anyOfKeys": ["milk"] },
+        { "key": "peanut_butter", "label": "Peanut butter", "essential": true, "quantityText": "2 tbsp", "anyOfKeys": ["peanut_butter"] }
+      ]
+    }
+  ]
+}
